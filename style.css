@@ -22,6 +22,10 @@
   --line-preset-1: 150%;
 
   --small-viewport-width: 456px;
+
+  @media (min-width: 800px) {
+    --small-viewport-width: 384px;
+  }
 }
 
 * {

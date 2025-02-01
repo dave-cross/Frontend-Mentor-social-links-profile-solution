@@ -20,6 +20,8 @@
   --text-preset-1: 24px;
   --text-preset-2: 14px;
   --line-preset-1: 150%;
+
+  --small-viewport-width: 456px;
 }
 
 * {
@@ -81,4 +83,18 @@ picture {
     --link-color: var(--green);
     --link-text-color: var(--grey-900);
   }
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-300));
+}
+
+.challenge-wrapper {
+  --max-child-width: var(--small-viewport-width, 320px);
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: var(--space-300)
+    max(var(--space-300), calc(50% - var(--max-child-width) / 2));
 }

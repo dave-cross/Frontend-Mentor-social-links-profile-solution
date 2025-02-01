@@ -47,6 +47,7 @@ h2 {
 }
 
 strong {
+  /* font-weight: 600; */
   color: var(--green);
 }
 
@@ -97,4 +98,38 @@ picture {
   min-height: 100vh;
   padding: var(--space-300)
     max(var(--space-300), calc(50% - var(--max-child-width) / 2));
+}
+
+.card {
+  background-color: var(--grey-800);
+  border-radius: var(--radius-lg);
+
+  width: 100%;
+  padding: var(--space-300);
+
+  @media (min-width: 400px) {
+    padding: var(--space-500);
+  }
+}
+
+.card__image {
+  img {
+    margin-inline: auto;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.card__info {
+  * {
+    --flow-space: var(--space-50);
+  }
+}
+
+.card__links {
+  ul {
+    --flow-space: var(--space-200);
+  }
 }

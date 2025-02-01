@@ -42,16 +42,21 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: var(--text-preset-2);
+  /* line-height: var(--line-preset-1); */
+}
+
+body * {
   line-height: var(--line-preset-1);
 }
 
 h2 {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: var(--text-preset-1);
+
+  letter-spacing: 0.2px;
 }
 
 strong {
-  /* font-weight: 600; */
   color: var(--green);
 }
 
@@ -76,7 +81,7 @@ picture {
   border-radius: var(--radius-sm);
   text-decoration: none;
   font: inherit;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 
   display: block;

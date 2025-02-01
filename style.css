@@ -19,7 +19,7 @@
 
   --text-preset-1: 24px;
   --text-preset-2: 14px;
-  --line-preset-1: 150%;
+  --line-preset-1: 1.5;
 
   --small-viewport-width: 456px;
 
@@ -42,10 +42,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: var(--text-preset-2);
-  /* line-height: var(--line-preset-1); */
-}
-
-body * {
   line-height: var(--line-preset-1);
 }
 

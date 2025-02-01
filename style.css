@@ -100,6 +100,10 @@ picture {
     max(var(--space-300), calc(50% - var(--max-child-width) / 2));
 }
 
+.align-center {
+  text-align: center;
+}
+
 .card {
   background-color: var(--grey-800);
   border-radius: var(--radius-lg);

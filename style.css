@@ -29,10 +29,31 @@
 }
 
 body {
+  color: var(--white);
+  background-color: var(--grey-900);
   font-family: var(--font-sanserif);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: var(--text-preset-2);
   line-height: var(--line-preset-1);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: var(--text-preset-1);
+}
+
+strong {
+  color: var(--green);
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
